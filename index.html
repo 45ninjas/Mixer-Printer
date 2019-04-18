@@ -6,26 +6,51 @@
 	<link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-	<!-- Let the user choose what endpoint they want to get details about. -->
-	<form>
-		<label for="endpoints">Category:</label>
-		<select name="endpoint" id="endpoints" onchange="updateIndex(this.value)" value="none">
-			<option value="types">Models & Types</option>
-		</select>
-	</form>
+	<div class="header no-print">
+		<h3 class="title">Mixer Printer</h3>
+		<span class="subtitle">Mixer.com's rest api in a more printer friendly form.</span>
+		<a class="github" href="https://github.com/Those45Ninjas/Mixer-Printer">View on GitHub</a>
+	</div>
+	<div id="container">
 
-	<!-- The tabl that details each url for the selected endpoint. -->
-	<table id="index">
-		<tbody>
-			<!-- This gets replaced by jQuery. -->
-		</tbody>
-	</table>
+		<div id="links" class="no-print">
 
-	<div class="details">
-		<div class="panel-rest">
-			<!-- This div gets replaced by jQuery. -->
-			<h2>No Print Data</h2>
+			<!-- Let the user choose what endpoint they want to get details about. -->
+			<form class="box-link">
+				<label for="endpoints">Category:</label>
+				<select name="endpoint" id="endpoints" onchange="updateIndex(this.value)" value="none">
+					<option value="types">Models & Types</option>
+				</select>
+			</form>
+			
+			<a id="view-link" class="box-link" href="https://dev.mixer.com/rest/index.html">View document at dev.mixer.com</a>
 		</div>
+
+		<div class="details">
+
+			<div class="panel-rest">
+				<!-- This div gets replaced by jQuery. -->
+			</div>
+
+		</div>
+
+		<!-- The table that details each url for the selected endpoint. -->
+		<table id="index" class="no-print">
+
+			<thead>
+				<tr>
+					<th>Method</th>
+					<th>Endpoint / Type</th>
+					<th>Description</th>
+				</tr>
+			</thead>
+
+			<tbody>
+				<!-- This gets replaced by jQuery. -->
+			</tbody>
+
+		</table>
+
 	</div>
 
 	<script type="text/javascript" src="script.js"></script>

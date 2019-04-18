@@ -1,0 +1,83 @@
+body {
+	font-family: sans-serif;
+}
+
+table
+{
+	width: 100%;
+	border-collapse: collapse; 
+	border: 1px solid #aeaeae;
+}
+td
+{
+	padding: 0.5em;
+}
+tr:nth-child(odd)
+{
+	background-color: #e3e3e3;
+}
+table .rest-endpoint-path
+{
+	width : 40%;
+}
+
+.details .close
+{
+	display: none;
+}
+
+.details h4,
+.details .panel-title
+{
+	font-size: 150%;
+	margin: 0.5em 0;
+}
+
+.details h2
+{
+	font-size: 125%;
+}
+
+.details h3, .details h5
+{
+	font-size: 115%;
+	margin-bottom: 0;
+}
+.details .modal-header,
+.details .panel-title
+{
+	border-bottom: 1px solid black;
+	border-top: 1px solid black;
+}
+
+.details h1,
+.details h2,
+.details h3,
+.details h4,
+.details h5
+{
+	font-family: sans-serif;
+}
+
+.details
+{
+	font-family: serif;
+}
+
+.text-monospace
+{
+	font-family: monospace;
+}
+
+@media print
+{
+	form
+	{
+		display: none;
+	}
+
+	table
+	{
+		display: none;
+	}
+}

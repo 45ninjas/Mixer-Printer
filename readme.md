@@ -5,6 +5,6 @@ To update the mixer api, simply replace the `mixer-rest-docs.html` file with the
 
 View the live version at https://those45ninjas.github.io/Mixer-Printer/
 
-##Screenshots
-![Printed Example](/screenshots/print.jpg);
-![Webpage](/screenshots/webpage.jpg);
+## Screenshots
+![Printed Example](/screenshots/print.jpg)
+![Webpage](/screenshots/webpage.png)

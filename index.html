@@ -8,7 +8,8 @@
 <body>
 	<!-- Let the user choose what endpoint they want to get details about. -->
 	<form>
-		<select name="endpoint" id="endpoints" onchange="updateIndex(this.value)">
+		<label for="endpoints">Category:</label>
+		<select name="endpoint" id="endpoints" onchange="updateIndex(this.value)" value="none">
 			<option value="types">Models & Types</option>
 		</select>
 	</form>

@@ -42,7 +42,7 @@ function updateIndex(value)
     		var href = $(this).find("a.panel-reference");    		
     		var modal = $(href).parent();
     		var name = modal.find("a").first().attr("name");
-    		var desc = modal.find("panel-body a:not([top-resource-description])");
+    		var desc = modal.find(".top-resource-description").next().text();
 
     		var tr = indexBody.append("<tr class=\"rest-endpoint\" onclick=\"window.location.href = '" + href.attr("href") + "'\">"+
     		"<td class=\"rest-endpoint-method\">" + name + "</td>"+
@@ -70,7 +70,7 @@ function HashChanged()
 	// It's not a modal? Let's get a panel instead.
 	if(modal.length == 0)
 		modal = mixerDocs.find(location.hash).parent().clone();
-	
+
 	// Add the detail from the mixer docs to the details div.
 	$(".details").append(modal);
 }

@@ -16,10 +16,6 @@ tr:nth-child(odd)
 {
 	background-color: #e3e3e3;
 }
-table .rest-endpoint-path
-{
-	width : 40%;
-}
 
 .details .close
 {
